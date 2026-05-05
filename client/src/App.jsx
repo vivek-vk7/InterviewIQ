@@ -11,7 +11,7 @@ import InterviewHistory from './pages/InterviewHistory'
 import Pricing from './pages/Pricing'
 import InterviewReport from './pages/InterviewReport'
 
-export const ServerUrl  = "https://interviewiq-backend-npl0.onrender.com"
+export const ServerUrl  = "https://interviewiq-backend-npl0.onrender.com"  //http://localhost:8000
 
 function App() {
 

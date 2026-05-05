@@ -15,8 +15,8 @@ export const googleAuth = async (req,res) => {
         let token = await genToken(user._id)
         res.cookie("token" , token , {
             http:true,
-            secure:true,
-            sameSite:"none",
+            secure:true,  //false -> true (in development it should be false and in production it should be true)
+            sameSite:"none",   // strict -> none (in development it should be strict and in production it should be none)
             maxAge:7 * 24 * 60 * 60 * 1000
         })
 
